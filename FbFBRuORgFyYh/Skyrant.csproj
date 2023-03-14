@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0430279-2E86-48FC-B045-0BAEE5BA77FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FbFBRuORgFyYh</RootNamespace>
+    <AssemblyName>FbFBRuORgFyYh</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>FbFBRuORgFyYh.ico</ApplicationIcon>
+    <StartupObject>SRBuild.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Siticone.UI">
+      <HintPath>..\..\dnSpy\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="FbFBRuORgFyYh_ProcessedByFody.cs" />
+    <Compile Include="iBaseult\Properties\Resources.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SRBuild\API.cs" />
+    <Compile Include="SRBuild\App.cs" />
+    <Compile Include="SRBuild\ApplicationSettings.cs" />
+    <Compile Include="SRBuild\Colors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SRBuild\Colors.Designer.cs">
+      <DependentUpon>Colors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SRBuild\Constants.cs" />
+    <Compile Include="SRBuild\enabled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SRBuild\enabled.Designer.cs">
+      <DependentUpon>enabled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SRBuild\Encryption.cs" />
+    <Compile Include="SRBuild\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SRBuild\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SRBuild\FormOverlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SRBuild\FormOverlay.Designer.cs">
+      <DependentUpon>FormOverlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SRBuild\GUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SRBuild\GUI.Designer.cs">
+      <DependentUpon>GUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SRBuild\InfoManager.cs" />
+    <Compile Include="SRBuild\IniFile.cs" />
+    <Compile Include="SRBuild\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SRBuild\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SRBuild\MagnifyingGlass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SRBuild\MovingMagnifyingGlass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SRBuild\MovingMagnifyingGlass.Designer.cs">
+      <DependentUpon>MovingMagnifyingGlass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SRBuild\OnProgramStart.cs" />
+    <Compile Include="SRBuild\Program.cs" />
+    <Compile Include="SRBuild\Properties\Resources.cs" />
+    <Compile Include="SRBuild\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SRBuild\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SRBuild\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SRBuild\Security.cs" />
+    <Compile Include="SRBuild\User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Costura\costura\dll.compressed" />
+    <EmbeddedResource Include="Costura\costura\pdb.compressed" />
+    <EmbeddedResource Include="Costura\metadata" />
+    <EmbeddedResource Include="Costura\metroframework\design\dll.compressed" />
+    <EmbeddedResource Include="Costura\metroframework\dll.compressed" />
+    <EmbeddedResource Include="Costura\metroframework\fonts\dll.compressed" />
+    <EmbeddedResource Include="Costura\microsoft\win32\primitives\dll.compressed" />
+    <EmbeddedResource Include="Costura\siticone\ui\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\appcontext\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\buffers\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\console\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\diagnosticsource\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\diagnostics\tracing\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\globalization\calendars\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\compression\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\compression\zipfile\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\filesystem\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\io\filesystem\primitives\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\linq\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\linq\expressions\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\memory\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\http\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\net\sockets\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\numerics\vectors\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\reflection\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\compilerservices\unsafe\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\extensions\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\interopservices\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\runtime\interopservices\runtimeinformation\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\cryptography\algorithms\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\cryptography\encoding\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\cryptography\primitives\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\security\cryptography\x509certificates\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\text\regularexpressions\dll.compressed" />
+    <EmbeddedResource Include="Costura\system\xml\readerwriter\dll.compressed" />
+    <EmbeddedResource Include="iBaseult\Properties\Resources.resources" />
+    <EmbeddedResource Include="SRBuild\Colors.resources" />
+    <EmbeddedResource Include="SRBuild\enabled.resources" />
+    <EmbeddedResource Include="SRBuild\Form1.resources" />
+    <EmbeddedResource Include="SRBuild\FormOverlay.resources" />
+    <EmbeddedResource Include="SRBuild\GUI.resources" />
+    <EmbeddedResource Include="SRBuild\Login.resources" />
+    <EmbeddedResource Include="SRBuild\MagnifyingGlass.resources" />
+    <EmbeddedResource Include="SRBuild\Register.resources" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="SRBuild\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
