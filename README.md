@@ -5,3 +5,5 @@ they are full on scamming everyone with their prices and this product being lite
 
 some of this source is still obfuscated, so it wont build without errors,
 hence I have added a release with skyrant build incase u just want to use it (removed auth).
+
+Note: Their Skyrant v2 uses all the same stuff for mouse clicks, detection etc. the only thing changed is gui and weapon profiles LOL
