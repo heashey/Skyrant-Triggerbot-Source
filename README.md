@@ -8,4 +8,6 @@ hence I have added a release with skyrant build incase u just want to use it (re
 
 Note: Their Skyrant v2 uses all the same stuff for mouse clicks, detection etc. the only thing changed is gui and weapon profiles LOL
 
+https://www.youtube.com/watch?v=vPJr2pMxkd8
+
 discord: heashey#9374
