@@ -11,3 +11,4 @@ Note: Their Skyrant v2 uses all the same stuff for mouse clicks, detection etc. 
 https://www.youtube.com/watch?v=vPJr2pMxkd8
 
 discord: heashey#9374
+spoofer: https://discord.gg/JEe3qsuaq8
